@@ -1,0 +1,398 @@
+/* style goes here */
+:host{
+  display: block;
+} 
+
+:host([hide-legend]) #chart-legend {
+  display: none;
+}
+
+.eds-line-chart {
+  overflow: hidden;
+}
+
+/* CSS changes required for line chart*/
+.line-chart .line {
+  /* stroke: var(--color-data-6 , #b98327); */
+  stroke-width: 2;
+  fill: none;
+}
+
+
+.chart-legend {
+  display: none;
+}
+
+.line-chart .axis .domain {
+  stroke: var(--text, #242424);
+}
+
+.line-chart .axis .tick line {
+  stroke-dasharray: 1,2;
+  stroke: var(--text, #242424);
+}
+
+.line-chart .axis .tick line.zero {
+  stroke-dasharray: none;
+  stroke: var(--text, #242424);
+}
+
+.line-chart .axis .tick line.solid {
+  stroke-dasharray: none;
+}
+
+.line-chart .axis text {
+  fill: var(--text, #242424);;
+  font-family: "Ericsson Hilda",Helvetica,sans-serif;
+  font-size: 14px;
+}
+
+.color-data-1 {
+  fill: var(--color-data-1 , #878787);
+  background-color: var(--color-data-1 , #878787);
+  stroke: var(--color-data-1 , #878787);
+}
+
+.color-data-2 {
+  fill: var(--color-data-2 , #976cf4);
+  background-color: var(--color-data-2 , #976cf4);
+  stroke: var(--color-data-2 , #976cf4);
+}
+
+.color-data-3 {
+  fill: var(--color-data-3 , #23969a);
+  background-color: var(--color-data-3 , #23969a);
+  stroke: var(--color-data-3 , #23969a);
+}
+
+.color-data-4 {
+  fill: var(--color-data-4 , #c86f6d);
+  background-color: var(--color-data-4 , #c86f6d);
+  stroke: var(--color-data-4 , #c86f6d);
+}
+
+.color-data-5 {
+  fill: var(--color-data-5 , #333);
+  background-color: var(--color-data-5 , #333);
+  stroke: var(--color-data-5 , #333);
+}
+
+.color-data-6 {
+  fill: var(--color-data-6 , #b98327);
+  background-color: var(--color-data-6 , #b98327);
+  stroke: var(--color-data-6 , #b98327);
+}
+
+.color-data-7 {
+  fill: var(--color-data-7 , #8087ad);
+  background-color: var(--color-data-7 , #8087ad);
+  stroke: var(--color-data-7 , #8087ad);
+}
+
+.color-data-8 {
+  fill: var(--color-data-8 , #e75fa0);
+  background-color: var(--color-data-8 , #e75fa0);
+  stroke: var(--color-data-8 , #e75fa0);
+}
+
+.color-data-9 {
+  fill: var(--color-data-9 , #3e0da9);
+  background-color: var(--color-data-9 , #3e0da9);
+  stroke: var(--color-data-9 , #3e0da9);
+}
+
+.color-data-10 {
+  fill: var(--color-data-10 , #9b3213);
+  background-color: var(--color-data-10 , #9b3213);
+  stroke: var(--color-data-10 , #9b3213);
+}
+
+.color-data-11 {
+  fill: var(--color-data-11 , #5b85d0);
+  background-color: var(--color-data-11 , #5b85d0);
+}
+
+.color-data-12 {
+  fill: var(--color-data-12 , #4d0c2b);
+  background-color: var(--color-data-12 , #4d0c2b);
+}
+
+.color-data-13 {
+  fill: var(--color-data-13 , #d82177);
+  background-color: var(--color-data-13 , #d82177);
+}
+
+.color-data-14 {
+  fill: var(--color-data-14 , #0c3b35);
+  background-color: var(--color-data-14 , #0c3b35);
+}
+
+.color-data-15 {
+  fill: var(--color-data-15 , #7695b0);
+  background-color: var(--color-data-15 , #7695b0);
+}
+
+.color-data-16 {
+  fill: var(--color-data-16 , #74132a);
+  background-color: var(--color-data-16 , #74132a);
+}
+
+.color-data-17 {
+  fill: var(--color-data-17 , #3e4461);
+  background-color: var(--color-data-17 , #3e4461);
+}
+
+.color-data-18 {
+  fill: var(--color-data-18 , #cf4219);
+  background-color: var(--color-data-18 , #cf4219);
+}
+
+.color-data-19 {
+  fill: var(--color-data-19 , #5b4013);
+  background-color: var(--color-data-19 , #5b4013);
+}
+
+.color-data-20 {
+  fill: var(--color-data-20 , #bd1f44);
+  background-color: var(--color-data-20 , #bd1f44);
+}
+
+/* thresholds */
+.axis .tick line.green,
+.green {
+  fill: var(--green, #288964);
+  stroke: var(--green, #288964);
+}
+
+.axis .tick line.red,
+.red {
+  fill: var(--red, #dc2d37);
+  stroke: var(--red, #dc2d37);
+}
+
+.axis .tick line.orange,
+.orange {
+  fill: var(--orange, #e66e19);
+  stroke: var(--orange, #e66e19);
+}
+
+.axis .tick line.yellow,
+.yellow {
+  fill: var(--yellow, #dcaf00);
+  stroke: var(--yellow, #dcaf00);
+}
+
+/* Tooltips */
+.chart-tooltip {
+  position: fixed;
+  background-color: var(--tooltip-chart-background);
+  border: 1px solid var(--tooltip-chart-border);
+  box-shadow: 0 2px 4px 0 var(--tooltip-chart-shadow);
+  padding: 4px 8px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
+
+.chart-tooltip.visible {
+  opacity: 1;
+}
+
+.chart-tooltip .content .title {
+  margin: 4px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  border-bottom: 1px solid #878787;
+  padding-bottom: 4px;
+}
+
+.chart-tooltip .content .title .unit-title {
+  padding-right: 32px;
+}
+
+.chart-tooltip .content .item,
+.chart-tooltip .content .summary-item {
+  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.chart-tooltip .content .item.empty,
+.chart-tooltip .content .summary-item.empty {
+  margin: 0;
+  display: none;
+}
+
+
+.chart-tooltip .content .item i.small,
+.chart-tooltip .content .summary-item i.small {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.chart-tooltip .content .item i.medium,
+.chart-tooltip .content .summary-item i.medium {
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
+}
+
+.chart-tooltip .content .item i.large,
+.chart-tooltip .content .summary-item i.large {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+}
+
+
+.chart-tooltip .content .item .key,
+.chart-tooltip .content .summary-item .key {
+  padding-right: 16px;
+  flex: 1 1 auto;
+}
+
+.chart-tooltip .content .item .value,
+.chart-tooltip .content .summary-item .value {
+  font-weight: 700;
+}
+
+.chart-tooltip .content .summary {
+  border-top: 1px solid #878787;
+  padding-top: 4px;
+  margin-top: 8px;
+}
+
+.chart-tooltip .content .item i,
+.chart-tooltip .content .summary-item i {
+  padding-right:0;
+  margin-right: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Data Markers */
+
+.marker-group {
+  stroke-width: 2px;
+}
+.marker-group .marker {
+  fill: none;
+  stroke-opacity: 50%;
+  pointer-events: none;
+}
+.marker-group:hover .marker {
+  stroke-opacity: 100%;
+}
+.marker-group.dashed {
+  stroke-dasharray: 3px 6px;
+}
+.marker-group.dotted {
+  stroke-dasharray: 0px 6px;
+  stroke-linecap: round;
+}
+.marker-group .label {
+  fill: var(--text, #242424);
+  stroke: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.marker-group .marker-hover, .marker-group .dot-hover {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+.marker-group .marker-overlay {
+  fill-opacity: 30%;
+  stroke: none;
+}
+.marker-group.dim {
+  opacity: 0.2;
+}
+.marker-def, .identifier {
+  stroke-width: 0;
+}
+.marker-def.circle, .marker-def.square, .marker-def.diamond, .marker-def.triangle, .marker-def.default, .identifier.circle, .identifier.square, .identifier.diamond, .identifier.triangle, .identifier.default {
+  stroke-width: 1px;
+}
+.chart-tooltip .content.data-marker .title .unit-title {
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chart-tooltip .content.data-marker .title svg {
+  min-width: 16px;
+}
+.chart-tooltip .content.data-marker .marker-info {
+  padding-top: 4px;
+  margin-top: 8px;
+  border-top: 1px solid ;
+}
+.chart-tooltip .data-marker {
+  max-width: 136px;
+}
+.chart-tooltip .empty {
+  display: none;
+}
+
+.light .identifier.circle, .light .identifier.default, .light .identifier.diamond, .light .identifier.square, .light .identifier.triangle, .light .marker-def.circle, .light .marker-def.default, .light .marker-def.diamond, .light .marker-def.square, .light .marker-def.triangle {
+  fill: #fafafa;
+  stroke-width: 1px;
+}
+
+.light .identifier.color-data-3, .light .marker-def.color-data-3 {
+  stroke: #23969a;
+  fill: #23969a;
+}
+
+/* marker defs */
+.marker-def.circle, .marker-def.square, .marker-def.diamond, .marker-def.triangle, .marker-def.default {
+  stroke: 1px;
+  fill: #fafafa;
+}
+
+/* cumulative distribution function */
+path.cdf {
+  fill: none;
+  stroke-width: 2;
+}
+
+path.cdf.color-data-1 {
+  stroke: #878787;
+}
+
+path.cdf-bg {
+  fill: none;
+  stroke-width: 4;
+  stroke: #fafafa;
+}
+
+path.cdf.color-data-1 {
+  stroke: #878787;
+}
+
+line.tooltip-line {
+  stroke: #242424;
+  stroke-width: 1px;
+}
+
+circle.tooltip-circle {
+  stroke-width: 3px;
+  fill: #fafafa;
+}
+
+circle.tooltip-circle.color-data-1 {
+  stroke: #878787;
+}
+
+path.cdf-hover {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 8;
+}

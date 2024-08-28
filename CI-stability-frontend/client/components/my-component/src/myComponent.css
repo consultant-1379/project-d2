@@ -1,0 +1,39 @@
+/* style goes here */
+:host{
+  display: block;
+}
+
+.layout__dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three column layout*/
+  row-gap: var(--space-small);
+  column-gap: var(--space-small);
+  background-color: var(--layer1);
+  padding-bottom: var(--space-small);
+}
+
+.layout__dashboard--fullscreen {
+  display: block;
+}
+
+/* styles to apply to the `cell` part (i.e each split cell) */
+eui-table-v0::part(cell) {
+  padding-top: var(--space-small, 4px);
+  padding-bottom: var(--space-small, 4px);
+  display: flex;
+  overflow:hidden;
+}
+
+/* styles to apply to the `border` part */
+eui-table-v0::part(border) {
+  border-top: dashed 1px var(--table-inner-gray, #878787);
+}
+
+
+.tileTitle1 {
+  text-align: center;
+}
+
+.title_main {
+  text-align: center;
+}
